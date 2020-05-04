@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+    border: solid black;
+}
+
+.row {
+    border: solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.search-div {
+    border: solid black;
+    width: 10vw;
+    height: 10vw;
+}
