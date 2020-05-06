@@ -14,3 +14,43 @@ body {
     width: 10vw;
     height: 10vw;
 }
+
+.treasure {
+    background-color: silver;
+}
+
+.trap {
+    background-color: tomato;
+}
+
+.heart {
+    background-color: red;
+    display: inline-block;
+    height: 15px;
+    margin: 0 5px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 15px;
+  }
+  
+.heart:before,
+.heart:after {
+content: "";
+background-color: red;
+border-radius: 50%;
+height: 15px;
+position: absolute;
+width: 15px;
+}
+
+.heart:before {
+top: -7px;
+left: 0;
+}
+
+.heart:after {
+left: 7px;
+top: 0;
+}
+  
