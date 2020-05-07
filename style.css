@@ -4,15 +4,37 @@ body {
 }
 
 .row {
-    border: solid black;
+    /* border: solid black; */
     display: flex;
     justify-content: center;
 }
 
-.search-div {
+.search-area {
+    background-image: url(img/desert_island.jpg);
+    background-size: cover;
+}
+
+.search-area:hover {
+    /* cursor: url(img/shovel.jpg), auto; */
+    cursor: grab;
+}
+
+.search-div10 {
     border: solid black;
     width: 10vw;
     height: 10vw;
+}
+
+.search-div20 {
+    border: solid black;
+    width: 5vw;
+    height: 5vw;
+}
+
+.search-div40 {
+    border: solid black;
+    width: 2vw;
+    height: 2vw;
 }
 
 .treasure {
@@ -23,6 +45,7 @@ body {
     background-color: tomato;
 }
 
+/* Heart shape from CSS-Tricks https://css-tricks.com/hearts-in-html-and-css/  */
 .heart {
     background-color: red;
     display: inline-block;
