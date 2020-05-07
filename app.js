@@ -86,12 +86,29 @@ $('button').on('click', (event)=>{
     //console.log(levelClass)
 });
 
+/////////////////
+// Event Handlers
+///////////////
+
+
 
 /////////////////
 //  Event listener
 /////////////////
 
-$(`.search-div`).on('click', (event)=>{
+$(document).on('click', '.search-div', (event)=>{
     console.log(levelClass)
-    console.log(event.currentTarget)
-});
+    const $currentDiv = event.currentTarget;
+    clicks++;
+    const classArr = $currentDiv.className.split(' ');
+    if (classArr.indexOf('treasure') !== -1){
+        foundTreasure();
+    } else if (classArr.indexOf('trap') !== -1) {
+        hitTrap();
+    } else if (clicks = 1) {
+        firstClick(classArr);
+    } else {
+        missed();
+    }
+    console.log($currentDiv.className.split(' '))
+})
