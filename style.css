@@ -38,11 +38,11 @@ body {
 }
 
 .treasure {
-    background-color: silver;
+    /* background-color: silver; */
 }
 
 .trap {
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 /* Heart shape from CSS-Tricks https://css-tricks.com/hearts-in-html-and-css/  */
